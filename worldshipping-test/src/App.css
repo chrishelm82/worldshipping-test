@@ -1,0 +1,29 @@
+
+.App {
+  background-image: url("./images/pinksky.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.random-button {
+  background-color: rgb(134, 211, 101);
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  font-weight: bold; ;
+}
+
+.increment-button {
+  background-color: rgb(93, 182, 167);
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  font-weight: bold; ;
+
+}
