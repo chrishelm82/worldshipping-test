@@ -64,7 +64,6 @@ class App extends React.Component {
         </button>
         <br></br>
         <br></br>
-        {/* Add a text area for the log */}
         <p> By: Chris Helm - 07/15/2022</p>
         <p> &#169; 2019 World Shipping, Inc.</p>
       </div>
