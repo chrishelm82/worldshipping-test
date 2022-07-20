@@ -18,7 +18,17 @@
 }
 
 .increment-button {
-  background-color: rgb(93, 182, 167);
+  background-color: rgb(97, 115, 229);
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 200px;
+  height: 30px;
+  border-radius: 4px;
+  font-weight: bold; ;
+
+}
+.decrement-button {
+  background-color: rgb(212, 167, 22);
   margin-left: 5px;
   margin-right: 5px;
   width: 200px;

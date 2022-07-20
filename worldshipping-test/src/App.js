@@ -45,6 +45,10 @@ class App extends React.Component {
     }
   };
 
+  decrementNumber = () => {
+    this.setState({ numberHeader: this.state.numberHeader - 1 });
+  }
+
   render() {
     return (
       <div className="App">
@@ -61,6 +65,9 @@ class App extends React.Component {
         </button>
         <button className="increment-button" onClick={this.incrementNumber}>
           Increment Number
+        </button>
+        <button className="decrement-button" onClick={this.decrementNumber}>
+          Decrement Number
         </button>
         <br></br>
         <br></br>
