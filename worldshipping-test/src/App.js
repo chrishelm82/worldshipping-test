@@ -50,6 +50,8 @@ class App extends React.Component {
   }
 
   render() {
+    const value = `${this.state.randomLog} ${this.state.numberHeader}\n${this.state.incrementLog} ${this.state.numberHeader}`
+    
     return (
       <div className="App">
         <h1 style={this.state.numberHeader >= 50 ? {color: "red"} : {color: "blue"}}>{this.state.numberHeader}</h1>
@@ -57,7 +59,7 @@ class App extends React.Component {
           <textarea
             rows="10"
             cols="100"
-            value={`${this.state.randomLog} ${this.state.numberHeader}\n${this.state.incrementLog} ${this.state.numberHeader}`}
+            value={value}
           />
         </div>
         <button className="random-button" onClick={this.randomNumber}>
