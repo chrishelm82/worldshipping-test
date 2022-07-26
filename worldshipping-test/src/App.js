@@ -29,7 +29,7 @@ class App extends React.Component {
     this.state = {
       numberHeader: 0,
       randomLog: "Random number to\n",
-      incrementLog: "Incremented number to\n"
+      incrementLog: "Incremented number to\n",
     };
   }
 
@@ -47,20 +47,21 @@ class App extends React.Component {
 
   decrementNumber = () => {
     this.setState({ numberHeader: this.state.numberHeader - 1 });
-  }
+  };
 
   render() {
-    const value = `${this.state.randomLog} ${this.state.numberHeader}\n${this.state.incrementLog} ${this.state.numberHeader}`
-    
+    const value = `${this.state.randomLog} ${this.state.numberHeader}\n${this.state.incrementLog} ${this.state.numberHeader}`;
     return (
       <div className="App">
-        <h1 style={this.state.numberHeader >= 50 ? {color: "red"} : {color: "blue"}}>{this.state.numberHeader}</h1>
+        <h1
+          style={
+            this.state.numberHeader >= 50 ? { color: "red" } : { color: "blue" }
+          }
+        >
+          {this.state.numberHeader}
+        </h1>
         <div>
-          <textarea
-            rows="10"
-            cols="100"
-            value={value}
-          />
+          <textarea rows="10" cols="100" value={value} />
         </div>
         <button className="random-button" onClick={this.randomNumber}>
           Random Number
